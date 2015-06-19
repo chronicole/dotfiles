@@ -1,14 +1,77 @@
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="rbates"
+ZSH_THEME="agnoster"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_LS_COLORS="true"
 
-plugins=(git bundler brew gem rbates)
+plugins=( osx git heroku powder pow github ruby brew cake middleman bundler)
 
 export PATH="/usr/local/bin:$PATH"
-export EDITOR='mate -w'
+export EDITOR='subl -w'
 
 source $ZSH/oh-my-zsh.sh
 
-# for Homebrew installed rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# -------------------------------------------------------------------
+# GIT
+# -------------------------------------------------------------------
+
+alias ga='git add'
+alias gp='git push'
+alias gl='git log'
+alias gs='git status'
+alias gd='git diff'
+alias gm='git commit -m'
+alias gma='git commit -am'
+alias gb='git branch'
+alias gc='git checkout'
+alias gra='git remote add'
+alias grr='git remote rm'
+alias gpu='git pull'
+alias gcl='git clone'
+alias gta='git tag -a -m'
+alias gf='git reflog'
+alias gprune='git remote prune origin'
+
+# leverage an alias from the ~/.gitconfig
+alias gh='git hist'
+
+alias zshconfig="subl ~/.zshrc"
+alias ohmyzsh="subl ~/.oh-my-zsh"
+
+# -------------------------------------------------------------------
+# Bower
+# -------------------------------------------------------------------
+alias bower="noglob bower"
+export PATH=/usr/local/share/npm/bin:$PATH
+
+# -------------------------------------------------------------------
+# Code Working Shortcuts
+# -------------------------------------------------------------------
+
+alias code="cd /Volumes/OleMule/code"
+alias ts="cd /Volumes/OleMule/code/tender && subl ."
+alias tsq="cd /Volumes/OleMule/code/qa.tender && subl ."
+alias lh="cd /Volumes/OleMule/code/lighthouse && subl ."
+alias lht="bundle exec rake test; bundle exec rake spec"
+alias lhq="cd /Volumes/OleMule/code/qa.lighthouse && subl ."
+alias ws="cd /Volumes/OleMule/code/www.entp && subl ."
+alias tssetup="RAILS_ENV=localprod bundle exec ./script/runner "Site.setup_selenium""
+alias tsrunner="RAILS_ENV=localprod bundle exec rake jobs:work"
+alias tsserver="RAILS_ENV=localprod bundle exec ./script/server"
+alias tstest="./test.sh"
+alias abkbw="cd /Volumes/OleMule/code/fresnel_web && subl ."
+alias abkb="cd /Volumes/OleMule/code/fresnel_api && subl ."
+alias tsync="rsync -avz ../www.tender/build/ public/marketing/"
+
+# -------------------------------------------------------------------
+# Load Node Version Manager
+# -------------------------------------------------------------------
+  [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
+
+# -------------------------------------------------------------------
+# chruby configuration
+# -------------------------------------------------------------------
+
+if [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ]; then
+	source /usr/local/share/chruby/chruby.sh
+	source /usr/local/share/chruby/auto.sh
+fi
