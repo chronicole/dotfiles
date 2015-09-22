@@ -1,5 +1,5 @@
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="agnoster"
+ZSH_THEME="chronicole"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_LS_COLORS="true"
 
@@ -8,7 +8,7 @@ plugins=( osx git heroku powder pow github ruby brew cake middleman bundler)
 export PATH="/usr/local/bin:$PATH"
 export EDITOR='subl -w'
 
-source $ZSH/
+source $ZSH/oh-my-zsh.sh
 
 # -------------------------------------------------------------------
 # GIT
@@ -62,4 +62,17 @@ alias abkbw="cd /Volumes/OleMule/code/fresnel_web && subl ."
 alias abkb="cd /Volumes/OleMule/code/fresnel_api && subl ."
 alias tsync="rsync -avz ../www.tender/build/ public/marketing/"
 
-alias udot="cd ~/dotfiles && git pull origin master"
+# -------------------------------------------------------------------
+# Load Node Version Manager
+# -------------------------------------------------------------------
+  [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
+
+# -------------------------------------------------------------------
+# chruby configuration
+# -------------------------------------------------------------------
+
+if [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ]; then
+	source /usr/local/share/chruby/chruby.sh
+	source /usr/local/share/chruby/auto.sh
+fi
+export PATH="/usr/local/sbin:$PATH"
