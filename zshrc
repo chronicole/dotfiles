@@ -1,14 +1,14 @@
-ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="chronicole"
+export PATH="/usr/local/bin:$PATH"
+
+ZSH=$HOME/dotfiles/oh-my-zsh
+ZSH_THEME="agnoster"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_LS_COLORS="true"
 
-plugins=( osx git heroku powder pow github ruby brew cake middleman bundler)
+plugins=(osx git heroku powder pow github ruby brew cake middleman bundler)
 
-export PATH="/usr/local/bin:$PATH"
+source $ZSH/oh-my-zsh.sh
 export EDITOR='subl -w'
-
-source $ZSH/.oh-my-zsh.sh
 
 # -------------------------------------------------------------------
 # GIT
