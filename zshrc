@@ -61,3 +61,5 @@ alias tstest="./test.sh"
 alias abkbw="cd /Volumes/OleMule/code/fresnel_web && subl ."
 alias abkb="cd /Volumes/OleMule/code/fresnel_api && subl ."
 alias tsync="rsync -avz ../www.tender/build/ public/marketing/"
+
+alias udot="cd ~/dotfiles && git pull origin master"
