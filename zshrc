@@ -61,18 +61,3 @@ alias tstest="./test.sh"
 alias abkbw="cd /Volumes/OleMule/code/fresnel_web && subl ."
 alias abkb="cd /Volumes/OleMule/code/fresnel_api && subl ."
 alias tsync="rsync -avz ../www.tender/build/ public/marketing/"
-
-# -------------------------------------------------------------------
-# Load Node Version Manager
-# -------------------------------------------------------------------
-  [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
-
-# -------------------------------------------------------------------
-# chruby configuration
-# -------------------------------------------------------------------
-
-if [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ]; then
-	source /usr/local/share/chruby/chruby.sh
-	source /usr/local/share/chruby/auto.sh
-fi
-export PATH="/usr/local/sbin:$PATH"
