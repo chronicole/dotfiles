@@ -47,17 +47,5 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # Code Working Shortcuts
 # -------------------------------------------------------------------
 
-alias code="cd /Volumes/OleMule/code"
-alias ts="cd /Volumes/OleMule/code/tender && subl ."
-alias tsq="cd /Volumes/OleMule/code/qa.tender && subl ."
-alias lh="cd /Volumes/OleMule/code/lighthouse && subl ."
-alias lht="bundle exec rake test; bundle exec rake spec"
-alias lhq="cd /Volumes/OleMule/code/qa.lighthouse && subl ."
-alias ws="cd /Volumes/OleMule/code/www.entp && subl ."
-alias tssetup="RAILS_ENV=localprod bundle exec ./script/runner "Site.setup_selenium""
-alias tsrunner="RAILS_ENV=localprod bundle exec rake jobs:work"
-alias tsserver="RAILS_ENV=localprod bundle exec ./script/server"
-alias tstest="./test.sh"
-alias abkbw="cd /Volumes/OleMule/code/fresnel_web && subl ."
-alias abkb="cd /Volumes/OleMule/code/fresnel_api && subl ."
-alias tsync="rsync -avz ../www.tender/build/ public/marketing/"
+alias code="cd $HOME/code"
+

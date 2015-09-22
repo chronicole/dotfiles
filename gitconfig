@@ -1,6 +1,7 @@
-[user]
-	name = Nicole
-	email = chronicole@gmail.com
+[include]
+  # For username / creds / etc
+  path = ~/.gitconfig.local
+
 [alias]
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
@@ -50,8 +51,5 @@
 	editor = subl -w
 [format]
 	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
-[github]
-	user = chronicole
-	token = e961917c98b4a35ca2f04c2b66fc5b36ac880930
 [push]
 	default = matching
