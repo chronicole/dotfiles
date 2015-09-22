@@ -8,7 +8,7 @@ plugins=( osx git heroku powder pow github ruby brew cake middleman bundler)
 export PATH="/usr/local/bin:$PATH"
 export EDITOR='subl -w'
 
-source $ZSH/oh-my-zsh.sh
+source $ZSH/
 
 # -------------------------------------------------------------------
 # GIT
