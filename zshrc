@@ -5,7 +5,7 @@ ZSH_THEME="agnoster"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_LS_COLORS="true"
 
-plugins=(osx git heroku powder pow github ruby brew cake middleman bundler)
+plugins=(osx git heroku powder pow github ruby brew cake middleman bundler sass node npm bower)
 
 source $ZSH/oh-my-zsh.sh
 export EDITOR='subl -w'
