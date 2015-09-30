@@ -48,4 +48,7 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # -------------------------------------------------------------------
 
 alias code="cd $HOME/code"
+alias ogcode="cd /Volumes/OleMule/code"
 
+
+source /usr/local/share/chruby/chruby.sh
