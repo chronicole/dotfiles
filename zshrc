@@ -51,4 +51,5 @@ alias code="cd $HOME/code"
 alias ogcode="cd /Volumes/OleMule/code"
 
 
-source /usr/local/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
