@@ -53,3 +53,9 @@ alias ogcode="cd /Volumes/OleMule/code"
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
+
+# -------------------------------------------------------------------
+# Dumb Internal Drive
+# -------------------------------------------------------------------
+
+alias mule="diskutil mount /dev/disk1s2"
