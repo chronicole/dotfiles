@@ -59,3 +59,11 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 # -------------------------------------------------------------------
 
 alias mule="diskutil mount /dev/disk1s2"
+alias allmine="open https://central.tri.be/issues\?\query_id=1404"
+alias thisweek="open https://central.tri.be/issues\?\query_id=144"
+alias tribemock="open http://m.tri.be/mockme"
+alias license="open https://theeventscalendar.com/wp-admin/profile.php"
+alias release="open https://docs.google.com/document/d/19eBzU5uqTyi6mYh7DDFjd8L0nFVXyz6oZ7WJh6kLN9E/edit#heading=h.mzvf0vhq21pj"
+alias ziptest="open http://inside.tri.be/2016/05/03/plugins-zip-testing/"
+alias mrflow="open http://inside.tri.be/2017/06/12/mr-release-workflow/"
+alias mrzip="open http://inside.tri.be/2017/02/03/plugins-packaging-with-the-bot/"
