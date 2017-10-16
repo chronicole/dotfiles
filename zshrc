@@ -34,28 +34,8 @@ alias gprune='git remote prune origin'
 # leverage an alias from the ~/.gitconfig
 alias gh='git hist'
 
-alias zshconfig="subl ~/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh"
-
 # -------------------------------------------------------------------
-# Bower
-# -------------------------------------------------------------------
-alias bower="noglob bower"
-export PATH=/usr/local/share/npm/bin:$PATH
-
-# -------------------------------------------------------------------
-# Code Working Shortcuts
-# -------------------------------------------------------------------
-
-alias code="cd $HOME/code"
-alias ogcode="cd /Volumes/OleMule/code"
-
-
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
-
-# -------------------------------------------------------------------
-# Dumb Internal Drive
+# Important Links for CLI
 # -------------------------------------------------------------------
 
 alias mule="diskutil mount /dev/disk1s2"
